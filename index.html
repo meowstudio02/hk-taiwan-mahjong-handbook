@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>香港版台灣麻雀</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 8mm 10mm;
+    }
+    * {
+      box-sizing: border-box;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang HK", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      font-size: 8pt;
+      line-height: 1.32;
+      color: #1a202c;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      text-align: center;
+      font-size: 15pt;
+      margin: 0 0 2px 0;
+      letter-spacing: 1px;
+      color: #111;
+      font-weight: 800;
+    }
+    .subtitle {
+      text-align: center;
+      font-size: 8pt;
+      color: #4a5568;
+      margin-bottom: 8px;
+      border-bottom: 2px solid #2d3748;
+      padding-bottom: 4px;
+    }
+    h2 {
+      font-size: 10pt;
+      background-color: #1e293b;
+      color: #ffffff;
+      padding: 3px 8px;
+      margin: 8px 0 5px 0;
+      border-radius: 3px;
+      page-break-after: avoid;
+      letter-spacing: 0.5px;
+    }
+    h3 {
+      font-size: 8.5pt;
+      color: #1e293b;
+      background-color: #e2e8f0;
+      margin: 5px 0 3px 0;
+      padding: 2px 6px;
+      border-left: 3px solid #334155;
+      page-break-after: avoid;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+      align-items: start;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 5px;
+      font-size: 7.5pt;
+      page-break-inside: auto;
+    }
+    tr {
+      page-break-inside: avoid;
+    }
+    th, td {
+      border: 1px solid #cbd5e0;
+      padding: 2.5px 4px;
+      text-align: left;
+      vertical-align: middle;
+    }
+    th {
+      background-color: #f1f5f9;
+      color: #1e293b;
+      font-weight: 700;
+      text-align: center;
+    }
+    td.center { text-align: center; }
+    td.bold { font-weight: 700; }
+    td.num {
+      text-align: center;
+      font-weight: 700;
+      color: #0f172a;
+      white-space: nowrap;
+    }
+    .badge {
+      display: inline-block;
+      background-color: #e2e8f0;
+      color: #1e293b;
+      padding: 1px 4px;
+      border-radius: 2px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .badge-warn {
+      display: inline-block;
+      background-color: #fee2e2;
+      color: #991b1b;
+      padding: 1px 4px;
+      border-radius: 2px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .rule-box {
+      background-color: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-radius: 4px;
+      padding: 5px 8px;
+      margin-bottom: 5px;
+      page-break-inside: avoid;
+    }
+    .rule-title {
+      font-weight: 700;
+      color: #1e40af;
+      margin-bottom: 2px;
+      font-size: 8.5pt;
+    }
+    ul, ol { margin: 2px 0 4px 16px; padding: 0; }
+    li { margin-bottom: 1.5px; }
+    .page-break { page-break-before: always; }
+    .note { font-size: 7pt; color: #475569; }
+    .mj-hand {
+      display: inline-flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1.5px;
+      margin: 3px 0 1px 0;
+      vertical-align: middle;
+    }
+    .mj-svg {
+      width: 22px;
+      height: 30px;
+      display: inline-block;
+      vertical-align: middle;
+      filter: drop-shadow(0.5px 1px 1px rgba(0,0,0,0.22));
+    }
+    .mj-space { display: inline-block; width: 6px; }
+  </style>
+</head>
+<body>
+
+  <h1>香港版台灣麻雀（十六張）完整手冊</h1>
+  <div class="subtitle">1. 麻將牌型與番數對照表（分類速查） ▸ 2. 現金賞罰表 ▸ 3. 其他港式台灣牌規則 ▸ 4. 分數計算 ▸ 5. 番種詳述（附正宗彩色圖解）</div>
+
+  <!-- ==================== 第一部分：牌型與番數對照表（分類速查） ==================== -->
+  <h2>一、 麻將牌型與番數對照表（全牌型分類速查）</h2>
+  <div class="note" style="margin-bottom:4px;">＊註：括號內「詳」代表原表後頁《番種詳述》所載之番數（開局前請與牌友共識採用標準）。「明/暗」代表副露明牌／門清暗牌之番數。</div>
+
+  <div class="grid-2">
+    <div>
+      <h3>1. 莊、花、字與門清聽牌類</h3>
+      <table>
+        <thead>
+          <tr><th style="width:34%;">牌型</th><th style="width:16%;">番數</th><th style="width:34%;">牌型</th><th style="width:16%;">番數</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="bold">莊家</td><td class="num">1</td><td class="bold">拉莊（連莊）</td><td class="num">2n+1</td></tr>
+          <tr><td class="bold">自摸</td><td class="num">1</td><td class="bold">門前清（門清）</td><td class="num">3</td></tr>
+          <tr><td class="bold">門清自摸（門摸）</td><td class="num">5</td><td class="bold">聽牌（叮牌）</td><td class="num">10</td></tr>
+          <tr><td class="bold">門清聽牌（門叮）</td><td class="num">5</td><td class="bold">一發（即食）</td><td class="num">5</td></tr>
+          <tr><td class="bold">天聽 / 地聽</td><td class="num">80 / 40</td><td class="bold">無花 / 正花 / 爛花</td><td class="num">2 / 2 / 1</td></tr>
+          <tr><td class="bold">一台花</td><td class="num">10 (詳6)</td><td class="bold">兩台花（花糊）</td><td class="num">30</td></tr>
+          <tr><td class="bold">七搶一 / 一搶七</td><td class="num">30 / 30</td><td class="bold">無字 / 無字花</td><td class="num">2 / 8</td></tr>
+          <tr><td class="bold">風牌（客風）</td><td class="num">1 (詳2)</td><td class="bold">風牌(正位/正圈)</td><td class="num">1 (詳2)</td></tr>
+          <tr><td class="bold">三元牌（中發白）</td><td class="num">2</td><td class="bold">雞糊 / 鴨糊</td><td class="num">30 / 15</td></tr>
+        </tbody>
+      </table>
+
+      <h3>2. 叫牌、將眼與求人類</h3>
+      <table>
+        <thead>
+          <tr><th style="width:34%;">牌型</th><th style="width:16%;">番數</th><th style="width:34%;">牌型</th><th style="width:16%;">番數</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="bold">假獨</td><td class="num">1</td><td class="bold">獨獨</td><td class="num">2</td></tr>
+          <tr><td class="bold">對碰</td><td class="num">2 (詳1)</td><td class="bold">將眼（2,5,8眼）</td><td class="num">2</td></tr>
+          <tr><td class="bold">將眼獨獨</td><td class="num">5</td><td class="bold">明絕</td><td class="num">5</td></tr>
+          <tr><td class="bold">半求人</td><td class="num">15</td><td class="bold">全求人</td><td class="num">30</td></tr>
+        </tbody>
+      </table>
+
+      <h3>3. 順子、般高、姊妹、龍與步高類</h3>
+      <table>
+        <thead>
+          <tr><th style="width:34%;">牌型</th><th style="width:16%;">番數</th><th style="width:34%;">牌型</th><th style="width:16%;">番數</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="bold">平糊</td><td class="num">5</td><td class="bold">大平糊(無字花平糊)</td><td class="num">20</td></tr>
+          <tr><td class="bold">老少（老少順）</td><td class="num">3</td><td class="bold">雙老少上(雙老少順)</td><td class="num">10</td></tr>
+          <tr><td class="bold">一般高(一色同順)</td><td class="num">5</td><td class="bold">雙般高(雙一色同順)</td><td class="num">15</td></tr>
+          <tr><td class="bold">三般高(太般高)</td><td class="num">20</td><td class="bold">四般高(超般高)</td><td class="num">80</td></tr>
+          <tr><td class="bold">兩姊妹(兩色同順)</td><td class="num">3</td><td class="bold">兩個兩個姊妹(雙同順)</td><td class="num">10</td></tr>
+          <tr><td class="bold">全姊妹</td><td class="num">40</td><td class="bold">三相逢(明/暗)</td><td class="num">10 / 20</td></tr>
+          <tr><td class="bold">四相逢(明/暗)</td><td class="num">30,50(詳20)</td><td class="bold">五相逢(明/暗)</td><td class="num">60,90(詳60)</td></tr>
+          <tr><td class="bold">雜龍(明/暗)</td><td class="num">10 / 20</td><td class="bold">清龍(明/暗)</td><td class="num">15 / 30</td></tr>
+          <tr><td class="bold">通天雜龍</td><td class="num">100</td><td class="bold">通天清龍</td><td class="num">300</td></tr>
+          <tr><td class="bold">一色三步高(明/暗)</td><td class="num">15/30(詳10/20)</td><td class="bold">三色三步高(明/暗)</td><td class="num">5 / 10</td></tr>
+          <tr><td class="bold">一色四步高(明/暗)</td><td class="num">25/50(詳20/40)</td><td class="bold">三色四步高(明/暗)</td><td class="num">15 / 30</td></tr>
+          <tr><td class="bold">一色五步高(明/暗)</td><td class="num">50/90(詳40/80)</td><td class="bold">三色五步高(明/暗)</td><td class="num">40 / 60</td></tr>
+        </tbody>
+      </table>
+
+      <h3>4. 數字、帶公、老頭與滿庭芳類</h3>
+      <table>
+        <thead>
+          <tr><th style="width:34%;">牌型</th><th style="width:16%;">番數</th><th style="width:34%;">牌型</th><th style="width:16%;">番數</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="bold">斷么九</td><td class="num">5</td><td class="bold">捉五魁</td><td class="num">10</td></tr>
+          <tr><td class="bold">缺5（有番子）</td><td class="num">5</td><td class="bold">缺5（無番子）</td><td class="num">10</td></tr>
+          <tr><td class="bold">全大（6-9）</td><td class="num">40</td><td class="bold">全小（1-4）</td><td class="num">40</td></tr>
+          <tr><td class="bold">混帶公</td><td class="num">40</td><td class="bold">全帶公</td><td class="num">80</td></tr>
+          <tr><td class="bold">混老頭（混么九）</td><td class="num">80</td><td class="bold">清老頭（清么九）</td><td class="num">120</td></tr>
+          <tr><td class="bold">混滿庭芳</td><td class="num">40</td><td class="bold">滿庭芳</td><td class="num">100</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <h3>5. 刻子、暗刻、槓牌、連刻與兄弟類</h3>
+      <table>
+        <thead>
+          <tr><th style="width:34%;">牌型</th><th style="width:16%;">番數</th><th style="width:34%;">牌型</th><th style="width:16%;">番數</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="bold">對對糊</td><td class="num">40</td><td class="bold">間間糊（坎坎糊）</td><td class="num">150</td></tr>
+          <tr><td class="bold">二暗刻 / 三暗刻</td><td class="num">5 / 10</td><td class="bold">四暗刻 / 五暗刻</td><td class="num">40 / 80</td></tr>
+          <tr><td class="bold">明槓 / 暗槓</td><td class="num">1(詳2) / 2</td><td class="bold">二槓 / 三槓</td><td class="num">5 / 10</td></tr>
+          <tr><td class="bold">四槓 / 五槓</td><td class="num">20 / 40</td><td class="bold">老少碰 / 雙老少碰</td><td class="num">5 / 15</td></tr>
+          <tr><td class="bold">二兄弟（兩同刻）</td><td class="num">5</td><td class="bold">小三兄弟(小三同刻)</td><td class="num">10</td></tr>
+          <tr><td class="bold">三兄弟（大三同刻）</td><td class="num">20</td><td class="bold">二連刻（兩連刻）</td><td class="num">5</td></tr>
+          <tr><td class="bold">小三連刻(雜/清)</td><td class="num">10 / 20</td><td class="bold">三連刻(大三連刻)</td><td class="num">20 / 30</td></tr>
+          <tr><td class="bold">小四連刻(雜/清)</td><td class="num">30 / 40</td><td class="bold">四連刻(大四連刻)</td><td class="num">40 / 50</td></tr>
+          <tr><td class="bold">小五連刻(雜/清)</td><td class="num">50 / 60</td><td class="bold">五連刻(大五連刻)</td><td class="num">60 / 80</td></tr>
+          <tr><td class="bold">雙連刻</td><td class="num">20</td><td class="bold">小六連刻 / 雙同刻</td><td class="num">詳述列項</td></tr>
+        </tbody>
+      </table>
+
+      <h3>6. 花色、門齊、三元、四喜與四歸類</h3>
+      <table>
+        <thead>
+          <tr><th style="width:34%;">牌型</th><th style="width:16%;">番數</th><th style="width:34%;">牌型</th><th style="width:16%;">番數</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="bold">缺一門</td><td class="num">8 (詳10)</td><td class="bold">五門齊 / 七門齊</td><td class="num">20 / 30</td></tr>
+          <tr><td class="bold">混一式（混一色）</td><td class="num">40</td><td class="bold">清一式（清一色）</td><td class="num">120</td></tr>
+          <tr><td class="bold">字一式（字一色）</td><td class="num">300</td><td class="bold">小三元 / 大三元</td><td class="num">30 / 60</td></tr>
+          <tr><td class="bold">小三風 / 大三風</td><td class="num">30 / 60</td><td class="bold">小四喜 / 大四喜</td><td class="num">80 / 160</td></tr>
+          <tr><td class="bold">四歸一(明/暗)</td><td class="num">5 / 10</td><td class="bold">四歸二(明/暗)</td><td class="num">10 / 20</td></tr>
+          <tr><td class="bold">四歸三(明/暗)</td><td class="num">詳15 / 30</td><td class="bold">四歸四(明/暗)</td><td class="num">20/40(詳60/120)</td></tr>
+          <tr><td class="bold">八歸</td><td class="num">20</td><td class="bold">十二歸</td><td class="num">80</td></tr>
+        </tbody>
+      </table>
+
+      <h3>7. 特殊牌型類（十三么、十六不搭、嚦咕）</h3>
+      <table>
+        <thead>
+          <tr><th style="width:34%;">牌型</th><th style="width:16%;">番數</th><th style="width:34%;">牌型</th><th style="width:16%;">番數</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="bold">十三么（十三公九）</td><td class="num">140</td><td class="bold">十六不搭</td><td class="num">60</td></tr>
+          <tr><td class="bold">大十六不搭(相逢)</td><td class="num">70</td><td class="bold">大十六不搭(龍)</td><td class="num">80</td></tr>
+          <tr><td class="bold">十六扉不搭</td><td class="num">80</td><td class="bold">嚦咕嚦咕</td><td class="num">50</td></tr>
+          <tr><td class="bold">八飛嚦咕 / 大嚦咕</td><td class="num">80</td><td class="bold">三元嚦咕</td><td class="num">20</td></tr>
+        </tbody>
+      </table>
+
+      <h3>8. 時態與偶然類（天地人糊、海底、槓花、雙響）</h3>
+      <table>
+        <thead>
+          <tr><th style="width:34%;">牌型</th><th style="width:16%;">番數</th><th style="width:34%;">牌型</th><th style="width:16%;">番數</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="bold">天糊 / 地糊 / 人糊</td><td class="num">120/80/40</td><td class="bold">七子聽 / 七子食</td><td class="num">20 / 20</td></tr>
+          <tr><td class="bold">十子聽 / 十子食</td><td class="num">10 / 10</td><td class="bold">海底撈魚 / 撈月</td><td class="num">10 / 20(詳10)</td></tr>
+          <tr><td class="bold">花上食糊(花上自摸)</td><td class="num">2</td><td class="bold">花上花食糊</td><td class="num">20</td></tr>
+          <tr><td class="bold">搶槓食糊</td><td class="num">5 (詳10)</td><td class="bold">搶暗槓食糊</td><td class="num">30</td></tr>
+          <tr><td class="bold">槓上食糊(槓上自摸)</td><td class="num">2 (詳5)</td><td class="bold">槓上槓食糊</td><td class="num">30</td></tr>
+          <tr><td class="bold">連續槓上槓(3/4/5)</td><td class="num">60/90/120</td><td class="bold">雪中送炭</td><td class="num">10</td></tr>
+          <tr><td class="bold">一炮雙響 / 三響</td><td class="num">5 / 10</td><td class="bold">尾牌連摸</td><td class="num">詳述列項</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ==================== 第二部分：現金賞罰表 ==================== -->
+  <h2>二、 現金賞罰表（籌碼即時結算）</h2>
+  <table>
+    <thead>
+      <tr>
+        <th style="width: 17%;">項目</th>
+        <th style="width: 16%;">賞罰</th>
+        <th style="width: 17%;">項目</th>
+        <th style="width: 16%;">賞罰</th>
+        <th style="width: 17%;">項目</th>
+        <th style="width: 17%;">賞罰</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="bold">暗槓</td>
+        <td class="center"><span class="badge">收每家 1 底</span></td>
+        <td class="bold">一台草</td>
+        <td class="center"><span class="badge">收每家半底</span></td>
+        <td class="bold">一台花</td>
+        <td class="center"><span class="badge">收每家 1 底</span></td>
+      </tr>
+      <tr>
+        <td class="bold">一二三骰</td>
+        <td class="center"><span class="badge-warn">賠每家 1 底</span></td>
+        <td class="bold">圍骰</td>
+        <td class="center"><span class="badge">收每家 1 底</span></td>
+        <td class="bold">詐糊</td>
+        <td class="center"><span class="badge-warn">賠每家 6 底</span></td>
+      </tr>
+      <tr>
+        <td class="bold">追打（字）</td>
+        <td class="center"><span class="badge">收每家 1 底</span></td>
+        <td class="bold">追打（筒索萬）</td>
+        <td class="center"><span class="badge">收每家 2 底</span></td>
+        <td class="bold">追打 n 次</td>
+        <td class="center"><span class="badge">X2、X3、X4</span></td>
+      </tr>
+      <tr>
+        <td class="bold">錯暗槓</td>
+        <td class="center"><span class="badge-warn">賠每家 1 底</span></td>
+        <td class="bold">叫碰未碰</td>
+        <td class="center"><span class="badge-warn">賠每家 1 底</span></td>
+        <td class="bold">錯聽牌</td>
+        <td class="center"><span class="badge-warn">企糊＋賠每門 1 底</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="page-break"></div>
+
+  <!-- ==================== 第三部分：其他港式台灣牌規則（正章適用） ==================== -->
+  <h2>三、 其他港式台灣牌規則（正章適用）</h2>
+
+  <div class="rule-box">
+    <ol>
+      <li><strong>開牌位置</strong>：牌山開牌位置為 1 花東風，如此類推。</li>
+      <li><strong>詐糊</strong>：<strong>罰每門 30 番（6 底）＋ 已聽牌最大牌型番數</strong>（拉莊不變亦不踢）。
+        <ul>
+          <li><strong>手牌全開即當表示胡牌論</strong>，若無法胡牌當詐胡論（單騎時誤開／準明聽／三家聽牌方便觀察則可豁免）。</li>
+          <li>自摸時，將糊牌拍埋牌堆然後開牌。</li>
+          <li>食糊時發現上牌不放中間／上牌不放中間導致其他人出銃（罰該玩家詐糊 ＋ 支付那出銃）。</li>
+          <li><strong>走雞規定</strong>：聽牌後，別人打出糊牌時，如沒有食糊，即為走雞。走雞後該局不能再食出／自摸（開牌當詐糊），此做法避免揀人食、惡意拉莊。叫糊時如糊牌為 3、6、9 萬，假若 3 萬走雞，亦不能糊 6 萬，除非過水（沒有聽牌的時候），否則開牌一律當詐糊。</li>
+          <li>如有雙響時其中一家詐糊，詐糊者需負擔詐糊賞罰 ＋ 替代出銃者出銃（牌局會以當作詐糊者出銃進入下局）。</li>
+        </ul>
+      </li>
+      <li><strong>上牌／碰牌</strong>：亮出配上的兩張手牌後，<strong>要將其上牌放中間</strong>。
+        <ul>
+          <li>如發現放錯上牌的位置導致其他人出銃，當放錯牌者詐糊論。</li>
+          <li>如放錯／忘記取牌，可在下次摸牌時放回，但不得食糊，自摸當詐糊論。</li>
+          <li>忘記取回上／碰牌的同巡不能自摸（請選擇一枚打出過水再解除後方可食糊／自摸）。</li>
+          <li>上牌放錯不在中間時，任何食出／自摸都作詐糊論。</li>
+        </ul>
+      </li>
+      <li><strong>投降</strong>：一家被同一家拉 3、6、9 次（如此類推），可選擇投降（付全數）或繼續。</li>
+      <li><strong>斷橋／大小相公 → 企糊</strong>（當局不能再食出／自摸）：
+        <ul>
+          <li>被發現大／小相公時，該局不能再收取任何特別賞罰（未發現前收取之番數不用退回），並且<strong>需要摸切（隨摸隨打）</strong>。</li>
+          <li><strong>斷橋定義</strong>：斷橋後，手牌不撞到牌河任何一張牌即不算斷橋（門前的副露吃牌、碰牌、花牌也算手牌）；手牌如飛離枱面，也當斷橋；如果被牌山擋住，牌山又不倒的話亦不算斷橋。</li>
+        </ul>
+      </li>
+      <li><strong>過水</strong>：糊牌現出時而未糊牌，視為過水，解除過水前不得糊牌，否則當詐糊論。
+        <ul>
+          <li>例：中、發對碰，不食中，也不能食發。</li>
+          <li><strong>解除過水狀態</strong>：其後打出／加槓／暗槓（不能靠大明槓）一張非糊之牌即可解除過水。<strong>大明槓是不能解除過水的</strong>，因為不能代替打出一張牌。</li>
+        </ul>
+      </li>
+      <li><strong>槓類事項</strong>：
+        <ul>
+          <li>大明槓可槓任何玩家。</li>
+          <li><strong>槓上自摸責任</strong>：大明槓後自摸<strong>只會收打出大明槓的 1 家</strong>；大明槓後任何數量嘅花摸都只會收打出大明槓的 1 家；大明槓後有任何加槓／暗槓上自摸就會係收 3 家。</li>
+          <li>聽牌後，不能加槓，亦不能暗槓。</li>
+          <li>上、碰牌後，不得即時加槓或暗槓，必須打牌，下一次摸牌時才可再開槓。</li>
+          <li>暗槓者，牌局完結時，若未有公開暗槓什麼牌，<strong>需歸還每家 5 番再即時賠每家 5 番</strong>。</li>
+        </ul>
+      </li>
+      <li><strong>捨牌及聽牌</strong>（手放開了捨牌＝打出，若有失誤導致該捨牌打橫，可在下家打牌前或盡早示意，以示糾正）：
+        <ul>
+          <li><strong>錯聽牌</strong>：企糊（需要摸切）＋ 賠每門一底。錯聽牌者必須主動報上，否則完場驗牌／被其他聽牌者發現當詐糊處理。</li>
+          <li>聽牌後，別人打出糊牌時，如沒有食糊，即為過水。過水後該局不能再食出／自摸。</li>
+          <li>聽牌動作只能在捨牌前進行，捨牌後如欲聽牌，必須在下巡捨牌時進行。</li>
+          <li>如有任何玩家有疑似故意詐糊／詐聽行為，有機會即時終止牌局以及永久 Blacklist 其玩家。</li>
+        </ul>
+      </li>
+      <li><strong>叫等與碰牌優先</strong>：如有人叫等，理論上可以繼續摸牌，如摸牌後再打出一張，牌局會繼續進行。<strong>碰最大，無假溜</strong>，只要下家未打出下一張牌都可碰。</li>
+      <li><strong>摸尾牌、和局、Jackpot 及流局賞罰</strong>：
+        <ul>
+          <li>摸最後一隻牌時，不可收暗槓，但可收一台花、一台草、七搶一、一搶七、八仙過海。</li>
+          <li><strong>和局＝連莊</strong>（不論莊家有否叫糊都不會過莊），入 Jackpot（如有玩此機制，每位玩家均需支付 5/10 番）。</li>
+          <li><strong>Jackpot 規例</strong>：自摸時需要在全副手牌倒下前叫 Jackpot 方可取 Jackpot。</li>
+          <li><strong>流局賞罰</strong>（如有玩此機制，未叫糊者需付 2 底給叫糊者）：ABC 叫糊，D 給 ABC 各 2 底；AB 叫糊，C 給 A 2 底，D 給 B 2 底。</li>
+        </ul>
+      </li>
+      <li><strong>自摸禁入牌規定</strong>：<strong>自摸不能把其牌放入／掂到自己手牌</strong>（因台牌計番方法與廣東牌不同，防止牌友將食糊牌放入再抽出其他牌誇大番數，故自摸時禁止將牌放入自己牌內再開）。</li>
+    </ol>
+  </div>
+
+  <!-- ==================== 第四部分：分數計算 ==================== -->
+  <h2>四、 分數計算（授受法 與 拉／踢／投降）</h2>
+
+  <div class="grid-2">
+    <div class="rule-box">
+      <div class="rule-title">授受法</div>
+      <ol>
+        <li>食糊時，首先計算手牌的番數，番數就是該副牌的番值，另加底，一般 <strong>5 番一底</strong>。</li>
+        <li><strong>台牌均為全銃</strong>：食打出時由出銃者包付整份食糊牌的番值。</li>
+        <li><strong>自摸收三家</strong>：自摸時其餘三家各付整副食糊牌的番值。</li>
+        <li>不設上限番數及包牌。</li>
+      </ol>
+    </div>
+
+    <div class="rule-box">
+      <div class="rule-title">拉／踢／投降 核心規則</div>
+      <ol>
+        <li><strong>拉</strong>：食糊番數不會即時結算，而是「拉」落下一局。假設 A 食 B 打出，先記下分數：
+          <ul>
+            <li><strong>a.</strong> A 跟 B 以外的人食糊，或 B 食其他兩家打出，A 便把剛才記下來的分數收下；</li>
+            <li><strong>b.</strong> A 食 B 以外的兩家，分數繼續記下，直至出現 a 或 d 的狀況；</li>
+            <li><strong>c.</strong> A 再食 B 或 A 自摸，B 記下的分數會<strong>乘上 1.5</strong>，再加上該局食糊的分數繼續記下（稱為拉兩口、拉三口，如此類推）；</li>
+            <li><strong>d.</strong> B 食 A 或者 B 自摸，B 付 A 記下分數的一半（稱為<strong>踢半</strong>）。</li>
+          </ul>
+        </li>
+        <li><strong>非整數取整</strong>：利益歸於食糊者（<strong>拉時向上取整，踢半時向下取整</strong>）。</li>
+        <li><strong>三口投降</strong>：只有牌友在拉第 <strong>3、6、9 舖</strong>情況下才有機會於下一局擲骰前提出投降，然後即付全數，結束被拉。</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="rule-box">
+    <div class="rule-title">拉莊與踢半實戰例子</div>
+    <ul>
+      <li><strong>拉莊例子</strong>：A 第一舖食 B 總數 20 番，不會即時結算；假設第二舖 A 再食 B 30 番即為「拉」，計法為 <strong>20 ＋ 10（第一舖的一半）＋ 30 ＝ 60 番</strong>。再假設 A 第三舖再食 B 40 番，總拉番數為 <strong>60 ＋ 30（上次拉莊數的一半）＋ 40 ＝ 130 番</strong>，直至不是 A 食糊或 B 投降為止才算結束拉莊。如此類推，A 第四舖再食 B 10 番，即 130 的一半 65 ＋ 10 番，共 <strong>205 番</strong>。</li>
+      <li><strong>踢半例子</strong>：接以上例子，B 在第三舖選擇不投降，假設第四舖 B 食 A 60 番，即成功踢半。此時 A 拉 130 番即踢半為 <strong>65 番（即時結算）</strong>。當踢半完成後，<strong>B 即時反拉 A 60 番</strong>，直至不是 B 食糊為止才算結束拉莊。</li>
+    </ul>
+  </div>
+
+  <div class="page-break"></div>
+
+  <!-- ==================== 第五部分：番種詳述（附正宗彩色麻雀圖解） ==================== -->
+  <h2>五、 番種詳述（全牌型定義、不計項目及正宗彩色麻雀圖解）</h2>
+
+  <h3>1. 莊花字狀態類</h3>
+  <table>
+    <thead>
+      <tr><th style="width:18%;">種類</th><th style="width:56%;">描述與正宗彩色牌型圖解</th><th style="width:14%;">不計</th><th style="width:12%;">番數</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class="bold">莊家 / 拉莊</td><td>莊家算一番；每連一莊算兩番。</td><td class="center">—</td><td class="num">1 / 2n+1</td></tr>
+      <tr><td class="bold">自摸 / 門清</td><td>自摸算 1 番；沒有碰／上過牌（允許開暗槓）為門清計 3 番。</td><td class="center">—</td><td class="num">1 / 3</td></tr>
+      <tr><td class="bold">門摸（不求人）</td><td>門清狀態下自摸，別稱「不求人」。</td><td class="center">自摸</td><td class="num">5</td></tr>
+      <tr><td class="bold">叮牌（聽牌）</td><td>叫糊時宣告叮牌，此後不再轉章。</td><td class="center">—</td><td class="num">10</td></tr>
+      <tr><td class="bold">門叮（門清聽牌）</td><td>門清的狀態下叮牌。</td><td class="center">門清、叮牌</td><td class="num">5</td></tr>
+      <tr><td class="bold">半求人</td><td>五副面子全部碰或上（不允許槓），單吊自摸。</td><td class="center">獨獨、自摸</td><td class="num">15</td></tr>
+      <tr><td class="bold">全求人</td><td>五副面子全部碰或上（不允許槓），單吊食打出。</td><td class="center">獨獨</td><td class="num">30</td></tr>
+      <tr><td class="bold">將眼</td><td>以一對二、五或八做眼。</td><td class="center">—</td><td class="num">2</td></tr>
+      <tr>
+        <td class="bold">對碰</td>
+        <td>
+          食糊時叫對碰，即持有兩對眼，食糊時其中一對眼組成刻子（例：對碰一萬及發財）：<br>
+          <div class="mj-hand" data-tiles="1s 2s 3s | 1w 1w | 3w 3w 3w | 6w 7w 8w | 2p 3p 4p | F F"></div>
+        </td>
+        <td class="center">—</td>
+        <td class="num">1 (表2)</td>
+      </tr>
+      <tr>
+        <td class="bold">假獨</td>
+        <td>
+          可以砌到叫單釣、卡窿或偏章：<br>
+          例1（在下列例子，食一索就是假獨，四索就不是假獨）：<br>
+          <div class="mj-hand" data-tiles="1s 1s 2s 3s | 1w 1w 1w | 3w 3w 3w | 2p 3p 4p | F F F"></div><br>
+          <div class="mj-hand" data-tiles="1s 2s 3s 7s 8s 9s | 1w 2w 3w | 6w 7w 8w | 2p 3p 4p | F F"></div><br>
+          例2（食三萬就是假獨，六萬就不是假獨）：
+          <div class="mj-hand" data-tiles="2w 3w 4w 5w 5w"></div>
+        </td>
+        <td class="center">—</td>
+        <td class="num">1</td>
+      </tr>
+      <tr><td class="bold">獨獨</td><td>只叫一飛（即純叫單吊、卡窿或偏張）。</td><td class="center">假獨</td><td class="num">2</td></tr>
+      <tr><td class="bold">字牌 / 正字</td><td>字牌刻子（2番）；中／發／白的刻子，或與自己座位／圈風脗合的風牌刻子為正字（2番）。</td><td class="center">—</td><td class="num">2 / 2</td></tr>
+      <tr><td class="bold">花 / 正花 / 無花</td><td>爛花（1番）；與座位脗合的正花（2番）；沒有花牌為無花（2番）。<div class="mj-hand" data-tiles="f1 f2 f3 f4"></div></td><td class="center">—</td><td class="num">1 / 2 / 2</td></tr>
+      <tr><td class="bold">無字 / 無字花</td><td>沒有番子（2番）；沒有番子及沒有花（8番）。</td><td class="center">無字、無花</td><td class="num">2 / 8</td></tr>
+      <tr><td class="bold">一台花</td><td>全四季（春夏秋冬）或全花牌（梅蘭竹菊）。一台花內含的花不計正花爛花，其他未齊一台的花可計。</td><td class="center">花、正花</td><td class="num">6 (表10)</td></tr>
+      <tr>
+        <td class="bold">大雞糊 / 大鴨糊</td>
+        <td>
+          除莊家及拉莊外，手牌在高點法結算下仍只有花牌的一番，沒有其他番數（偶然類番數如搶槓、雙響等一律破壞大雞）。自摸時為大鴨（15番）。<br>
+          例（食一筒或四筒都是雞糊；若自摸或已叫聽牌就一定不是雞糊）：<br>
+          <div class="mj-hand" data-tiles="1s 2s 3s | 1w 1w 1w | 3w 3w 3w | 6w 7w 8w | 2p 3p | F F"></div>
+        </td>
+        <td class="center">—</td>
+        <td class="num">30 / 15</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>2. 順子類</h3>
+  <table>
+    <thead>
+      <tr><th style="width:18%;">種類</th><th style="width:56%;">描述與正宗彩色牌型圖解</th><th style="width:14%;">不計</th><th style="width:12%;">番數</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class="bold">平糊</td><td>五副面子均為順子。</td><td class="center">—</td><td class="num">5</td></tr>
+      <tr><td class="bold">無字花平糊(大平糊)</td><td>沒有番子，沒有花，又是平糊，別稱「大平糊」。</td><td class="center">平糊、無字、無花、無字花</td><td class="num">20</td></tr>
+      <tr>
+        <td class="bold">雜龍</td>
+        <td>
+          三個花式的順子分別為一二三、四五六、七八九：<br>
+          <div class="mj-hand" data-tiles="1w 2w 3w | 4p 5p 6p | 7s 8s 9s"></div>
+        </td>
+        <td class="center">—</td>
+        <td class="num">明10 / 暗20</td>
+      </tr>
+      <tr>
+        <td class="bold">清龍</td>
+        <td>
+          同一個花式的順子分別為一二三、四五六、七八九：<br>
+          <div class="mj-hand" data-tiles="1w 2w 3w | 4w 5w 6w | 7w 8w 9w"></div>
+        </td>
+        <td class="center">老少順</td>
+        <td class="num">明15 / 暗30</td>
+      </tr>
+      <tr><td class="bold">老少順 / 雙老少順</td><td>同一花色的一二三、七八九順子（3番）；有兩組獨立的老少順（10番）。</td><td class="center">雙同順、老少順</td><td class="num">3 / 10</td></tr>
+      <tr>
+        <td class="bold">一色同順（一般高）</td>
+        <td>
+          兩個完全相同的順子，別稱「一般高」：<br>
+          <div class="mj-hand" data-tiles="4w 5w 6w | 4w 5w 6w"></div>
+        </td>
+        <td class="center">—</td>
+        <td class="num">5</td>
+      </tr>
+      <tr>
+        <td class="bold">雙一色同順(雙般高)</td>
+        <td>
+          兩個一色兩同順，別稱「雙般高」：<br>
+          <div class="mj-hand" data-tiles="4w 5w 6w | 4w 5w 6w | 2p 3p 4p | 2p 3p 4p"></div>
+        </td>
+        <td class="center">一色同順</td>
+        <td class="num">15</td>
+      </tr>
+      <tr>
+        <td class="bold">一色三同順(三般高)</td>
+        <td>
+          三個完全相同的順子，別稱「太般高／三般高」：<br>
+          <div class="mj-hand" data-tiles="4w 5w 6w | 4w 5w 6w | 4w 5w 6w"></div>
+        </td>
+        <td class="center">一色同順</td>
+        <td class="num">20</td>
+      </tr>
+      <tr><td class="bold">一色四同順(四般高)</td><td>四個完全相同的順子，別稱「超般高／四般高」。</td><td class="center">一色同順、三同順</td><td class="num">80</td></tr>
+      <tr>
+        <td class="bold">兩色同順（相逢）</td>
+        <td>
+          兩個花式不同但數字一樣的順子，別稱「相逢／兩姊妹」：<br>
+          <div class="mj-hand" data-tiles="5w 6w 7w | 5p 6p 7p"></div>
+        </td>
+        <td class="center">—</td>
+        <td class="num">3</td>
+      </tr>
+      <tr>
+        <td class="bold">三色同順（三相逢）</td>
+        <td>
+          三個花式不同但數字一樣的順子，別稱「三相逢」：<br>
+          <div class="mj-hand" data-tiles="5w 6w 7w | 5p 6p 7p | 5s 6s 7s"></div>
+        </td>
+        <td class="center">兩色同順</td>
+        <td class="num">明10 / 暗20</td>
+      </tr>
+      <tr><td class="bold">雙同順（雙姊妹）</td><td>有兩組獨立的兩色同順，別稱「雙姊妹／兩個兩個姊妹」。</td><td class="center">兩色同順</td><td class="num">10</td></tr>
+      <tr><td class="bold">四同順（四相逢）</td><td>四個數字一樣的順子，不論花色，必然加計 N 色同順、一色 N 同順、雙一色同順。</td><td class="center">—</td><td class="num">20 (表30,50)</td></tr>
+      <tr><td class="bold">五同順（五相逢）</td><td>五個數字一樣的順子，不論款式，必然加計 N 色同順、一色 N 同順、雙一色同順。</td><td class="center">平糊</td><td class="num">60 (表60,90)</td></tr>
+      <tr>
+        <td class="bold">三色三步高</td>
+        <td>
+          三門數字牌做出三組遞增一位數字的順子：<br>
+          <div class="mj-hand" data-tiles="4p 5p 6p | 5w 6w 7w | 6s 7s 8s"></div>
+        </td>
+        <td class="center">—</td>
+        <td class="num">明5 / 暗10</td>
+      </tr>
+      <tr>
+        <td class="bold">三色四步高</td>
+        <td>
+          三門數字牌做出四組遞增一位數字的順子，而第四組要與第一組同門：<br>
+          <div class="mj-hand" data-tiles="4p 5p 6p | 5w 6w 7w | 6s 7s 8s | 7p 8p 9p"></div>
+        </td>
+        <td class="center">三色三步高</td>
+        <td class="num">明15 / 暗30</td>
+      </tr>
+      <tr>
+        <td class="bold">三色五步高</td>
+        <td>
+          三門數字牌做出五組遞增一位數字的順子（第四組同第一組、第五組同第二組）：<br>
+          <div class="mj-hand" data-tiles="3s 4s 5s | 4p 5p 6p | 5w 6w 7w | 6s 7s 8s | 7p 8p 9p"></div>
+        </td>
+        <td class="center">平糊、三色三/四步高</td>
+        <td class="num">明40 / 暗60</td>
+      </tr>
+      <tr>
+        <td class="bold">一色三步高</td>
+        <td>
+          同一門數字牌三副依次遞增一位的順子：<br>
+          <div class="mj-hand" data-tiles="2p 3p 4p | 3p 4p 5p | 4p 5p 6p"></div>
+        </td>
+        <td class="center">—</td>
+        <td class="num">明10 / 暗20<br>(表15/30)</td>
+      </tr>
+      <tr><td class="bold">一色四步高</td><td>同一門數字牌四副依次遞增一位的順子。</td><td class="center">一色三步高</td><td class="num">明20 / 暗40<br>(表25/50)</td></tr>
+      <tr><td class="bold">一色五步高</td><td>同一門數字牌五副依次遞增一位的順子。</td><td class="center">平糊、一色三/四步高、連環套</td><td class="num">明40 / 暗80<br>(表50/90)</td></tr>
+    </tbody>
+  </table>
+
+  <h3>3. 刻槓類</h3>
+  <table>
+    <thead>
+      <tr><th style="width:18%;">種類</th><th style="width:56%;">描述與正宗彩色牌型圖解</th><th style="width:14%;">不計</th><th style="width:12%;">番數</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class="bold">槓 / 多槓</td><td>手牌有一個槓（明1/暗2，詳述作2）；二槓(5)、三槓(10)、四槓(20)、五槓(40)。</td><td class="center">—</td><td class="num">1~40</td></tr>
+      <tr><td class="bold">對對糊</td><td>五個刻子／槓。</td><td class="center">—</td><td class="num">40</td></tr>
+      <tr><td class="bold">兩暗刻 / 三暗刻</td><td>二個暗刻／槓（5番）；三個暗刻／槓（10番）。</td><td class="center">兩暗刻</td><td class="num">5 / 10</td></tr>
+      <tr><td class="bold">四暗刻 / 五暗刻</td><td>四個暗刻／槓（40番）；五個暗刻／槓（80番）。</td><td class="center">兩/三暗刻、對對糊</td><td class="num">40 / 80</td></tr>
+      <tr><td class="bold">坎坎糊（間間糊）</td><td>五個暗刻，沒有槓，單釣可以食打出，對碰要自摸。</td><td class="center">門清、對對糊</td><td class="num">150</td></tr>
+      <tr><td class="bold">老少刻 / 雙老少刻</td><td>同一花色的一、九刻子（5番）；有兩組獨立的老少刻（15番）。</td><td class="center">雙同刻、老少刻</td><td class="num">5 / 15</td></tr>
+      <tr>
+        <td class="bold">兩連刻（二連刻）</td>
+        <td>
+          兩組同花色而數字相連的刻子：<br>
+          <div class="mj-hand" data-tiles="3w 3w 3w | 4w 4w 4w"></div>
+        </td>
+        <td class="center">—</td>
+        <td class="num">5</td>
+      </tr>
+      <tr>
+        <td class="bold">小三連刻</td>
+        <td>
+          三組同花色而數字相連的牌，組成兩個刻子及一對眼：<br>
+          <div class="mj-hand" data-tiles="3w 3w 3w | 4w 4w 4w | 5w 5w"></div>
+        </td>
+        <td class="center">兩連刻</td>
+        <td class="num">20 (表10,20)</td>
+      </tr>
+      <tr><td class="bold">大三連刻（三連刻）</td><td>三組同花色而數字相連的刻子。</td><td class="center">兩連刻、小三連刻</td><td class="num">表 20,30</td></tr>
+      <tr><td class="bold">小四連刻 / 大四連刻</td><td>四組同花色相連的 3刻1眼（小四連刻）或 4組刻子（大四連刻）。</td><td class="center">低級連刻類</td><td class="num">30,40 / 40,50</td></tr>
+      <tr><td class="bold">小五連刻 / 大五連刻</td><td>五組同花色相連的 4刻1眼（小五連刻）或 5組刻子（大五連刻）。</td><td class="center">連刻類、對對糊</td><td class="num">50,60 / 60,80</td></tr>
+      <tr><td class="bold">小六連刻 / 雙連刻</td><td>六組同花色相連組成 5刻1眼（小六連刻）；兩組獨立的連刻（雙連刻，20番）。</td><td class="center">連刻類、清一色、對對糊</td><td class="num">詳述 / 20</td></tr>
+      <tr>
+        <td class="bold">兩同刻（二兄弟）</td>
+        <td>
+          兩組數字相同的刻子：<br>
+          <div class="mj-hand" data-tiles="4w 4w 4w | 4p 4p 4p"></div>
+        </td>
+        <td class="center">—</td>
+        <td class="num">5</td>
+      </tr>
+      <tr>
+        <td class="bold">小三同刻(小三兄弟)</td>
+        <td>
+          三組數字相同的牌，組成兩個刻子及一對眼：<br>
+          <div class="mj-hand" data-tiles="4w 4w 4w | 4p 4p 4p | 4s 4s"></div>
+        </td>
+        <td class="center">兩同刻</td>
+        <td class="num">10</td>
+      </tr>
+      <tr><td class="bold">大三同刻（三兄弟）</td><td>三組數字相同的刻子（20番）；另有兩組獨立同刻之「雙同刻」。</td><td class="center">兩同刻、小三同刻</td><td class="num">20</td></tr>
+    </tbody>
+  </table>
+
+  <h3>4. 數字類</h3>
+  <table>
+    <thead>
+      <tr><th style="width:18%;">種類</th><th style="width:56%;">描述與正宗彩色牌型圖解</th><th style="width:14%;">不計</th><th style="width:12%;">番數</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class="bold">斷么九</td><td>沒有一、九數牌及番子。</td><td class="center">無字</td><td class="num">5</td></tr>
+      <tr><td class="bold">混帶公 / 全帶公</td><td>每個面子、對子都帶有一、九或番子（混帶公 40番）；純帶一、九無字（全帶公 80番）。</td><td class="center">無字、缺五</td><td class="num">40 / 80</td></tr>
+      <tr><td class="bold">混么九 / 清么九</td><td>手牌全為一、九及番子（混老頭 80番）；手牌全為純一、九（清老頭 120番），必加計對對/嚦咕等。</td><td class="center">無字、缺五</td><td class="num">80 / 120</td></tr>
+      <tr><td class="bold">缺五</td><td>手牌沒有五萬、五筒及五索（無番子 10番／有番子 5番）。</td><td class="center">無字</td><td class="num">10 / 5</td></tr>
+      <tr><td class="bold">混滿庭芳</td><td>每個面子、對子都帶有同一個數字或番子。</td><td class="center">—</td><td class="num">40</td></tr>
+      <tr>
+        <td class="bold">滿庭芳</td>
+        <td>
+          五個面子與一對眼都帶有同一個數字，常稱為全帶（某數），以下為全帶四例子：<br>
+          <div class="mj-hand" data-tiles="2s 3s 4s | 3p 4p 5p | 3w 4w 5w | 4w 5w 6w | 4p 5p 6p | 4w 4w"></div>
+        </td>
+        <td class="center">無字</td>
+        <td class="num">100</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>5. 花色類 與 6. 字牌類</h3>
+  <table>
+    <thead>
+      <tr><th style="width:18%;">種類</th><th style="width:56%;">描述與正宗彩色牌型圖解</th><th style="width:14%;">不計</th><th style="width:12%;">番數</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class="bold">混一色 / 清一色</td><td>同一花色數牌加番子（混一色 40番）；全手純同一花色數牌（清一色 120番）。</td><td class="center">無字、缺一門</td><td class="num">40 / 120</td></tr>
+      <tr><td class="bold">缺一門</td><td>手牌沒有番子，並且手牌中沒有筒、索、萬其中一門。</td><td class="center">無字</td><td class="num">10 (表8)</td></tr>
+      <tr>
+        <td class="bold">五門齊（小／大）</td>
+        <td>
+          東南西北為一門、中發白為一門、筒索萬各一門（其中一門僅對子為小五門齊，每門皆有面子為大五門齊）：<br>
+          <div class="mj-hand" data-tiles="W W | C C C | 3w 4w 5w | 5p 5p 5p | 2s 3s 4s | 7s 8s 9s"></div>
+        </td>
+        <td class="center">—</td>
+        <td class="num">20</td>
+      </tr>
+      <tr><td class="bold">七門齊（小／大）</td><td>在五門齊基礎上，再加上四季牌（春夏秋冬）及花牌（梅蘭竹菊），七門齊備。</td><td class="center">小五門齊</td><td class="num">30</td></tr>
+      <tr><td class="bold">字一色</td><td>手牌全為番子，必然加計對對糊／嚦咕嚦咕。</td><td class="center">—</td><td class="num">300</td></tr>
+      <tr><td class="bold">小三元 / 大三元</td><td>中、發、白有 2刻1眼（小三元 30番）或 3組刻/槓（大三元 60番）。</td><td class="center">字牌、正字</td><td class="num">30 / 60</td></tr>
+      <tr><td class="bold">小三風 / 大三風</td><td>風牌有 2刻1眼（小三風 30番）或 3組刻/槓（大三風 60番），錯位風不算番，正位風算番。</td><td class="center">字牌、正字</td><td class="num">30 / 60</td></tr>
+      <tr><td class="bold">小四喜 / 大四喜</td><td>東南西北有 3刻1眼（小四喜 80番）或 4組刻/槓（大四喜 160番）。</td><td class="center">字牌、正字</td><td class="num">80 / 160</td></tr>
+    </tbody>
+  </table>
+
+  <h3>7. 四歸類 與 8. 特殊類</h3>
+  <table>
+    <thead>
+      <tr><th style="width:18%;">種類</th><th style="width:56%;">描述與正宗彩色牌型圖解</th><th style="width:14%;">不計</th><th style="width:12%;">番數</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class="bold">四歸一 / 四歸二</td><td>四張相同的牌歸於兩個組合（1順1刻，或嚦咕兩個對子）。</td><td class="center">—</td><td class="num">明5/暗10<br>(四歸二 10/20)</td></tr>
+      <tr><td class="bold">四歸三 / 四歸四</td><td>四張同牌歸於三個組合（2順1眼，明15/暗30）；歸於四個順子（四歸四 明60/暗120，表20/40）。</td><td class="center">—</td><td class="num">15/30 及 60/120</td></tr>
+      <tr><td class="bold">八歸 / 十二歸</td><td>有兩組（八歸 20番）或三組（十二歸 80番）四歸牌型，原四歸番數另外獨立計算。</td><td class="center">—</td><td class="num">20 / 80</td></tr>
+      <tr>
+        <td class="bold">十三公九（十三么）</td>
+        <td>
+          集齊東南西北中發白，筒索萬每門的一、九牌，再加一組面子，須為門清（叫十三扉另計）：<br>
+          <div class="mj-hand" data-tiles="1w 9w 1p 9p 1s 9s E S W N P C F N | 3w 4w 5w"></div>
+        </td>
+        <td class="center">門清</td>
+        <td class="num">140</td>
+      </tr>
+      <tr>
+        <td class="bold">十六不搭</td>
+        <td>
+          集齊東南西北中發白，筒索萬每門三隻但不能搭上（至少相隔三個數字，如 1,4,9 或 2,5,9），再加當中一隻成眼（大十六不搭相逢70、龍80；叫十六扉加計80番）：<br>
+          <div class="mj-hand" data-tiles="2w 6w 9w | 1p 5p 8p | 1s 4s 8s | E S W N P C F N"></div>
+        </td>
+        <td class="center">門清</td>
+        <td class="num">60</td>
+      </tr>
+      <tr>
+        <td class="bold">嚦咕嚦咕（八對半）</td>
+        <td>
+          八對對子，另外加一張與所持對子重複的牌，須為門清（八對嚦咕／八飛嚦咕另計80番；三元嚦咕加20番；另有四喜嚦咕、三色同對、三至八連對）：<br>
+          <div class="mj-hand" data-tiles="1w 1w 5w 5w 9w 9w | 1s 1s 2s 2s 6s 6s 6s | 4p 4p | N N S S"></div>
+        </td>
+        <td class="center">門清、將眼、三元牌、風牌</td>
+        <td class="num">50</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>9. 時態類</h3>
+  <table>
+    <thead>
+      <tr><th style="width:18%;">種類</th><th style="width:56%;">描述</th><th style="width:14%;">不計</th><th style="width:12%;">番數</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class="bold">即食（一發）</td><td>叮牌者在叮牌後，打出下一張牌前食糊，叮牌後摸下一張時自摸也算。</td><td class="center">—</td><td class="num">5</td></tr>
+      <tr><td class="bold">天叮（天聽）</td><td>閒家在配牌後，在莊家摸第一張牌後宣告叮牌；或莊家在配牌後，隨摸隨打第一張牌宣告叮牌（若莊家先把牌混入暗手後才打牌報叮則只能算地叮）。</td><td class="center">門清、門叮</td><td class="num">80</td></tr>
+      <tr><td class="bold">地叮 / 人叮</td><td>打出第一張牌時宣告叮牌為地叮（40番）；第一巡內鳴牌後宣告叮牌為人叮（若有人碰/上/槓過則不算）。</td><td class="center">門清、門叮</td><td class="num">40 / 詳述</td></tr>
+      <tr><td class="bold">天糊 / 地糊 / 人糊</td><td>莊家起手配牌食糊為天糊（120番）；閒家配牌16張已叫糊食東家首張打出為地糊（80番）；第一巡內食糊為人糊（40番，無人碰/上/槓過）。</td><td class="center">門清、七/十隻內</td><td class="num">120 / 80 / 40</td></tr>
+      <tr><td class="bold">七隻內 / 十隻內</td><td>地下只有七隻牌或以內時食糊/聽牌（20番）；十隻牌或以內時食糊/聽牌（10番），不計被上、碰、槓、食糊的牌。</td><td class="center">十隻內</td><td class="num">20 / 10</td></tr>
+      <tr><td class="bold">雙響 / 三響</td><td>一張牌出銃給兩家（5番）；一張牌出銃給三家（10番）。</td><td class="center">雙響</td><td class="num">5 / 10</td></tr>
+      <tr><td class="bold">海底撈月 / 撈魚</td><td>摸牌牆最後一張牌後出銃（撈魚），或自摸牌牆最後一張牌食糊（撈月）。</td><td class="center">—</td><td class="num">10 (表20)</td></tr>
+      <tr><td class="bold">花上自摸 / 槓上自摸</td><td>摸到花牌後補牌自摸（2番，花上花20番）；槓後補牌自摸（5番/表2番，槓上槓30番，連續60/90/120番）。</td><td class="center">自摸</td><td class="num">2 / 5</td></tr>
+      <tr><td class="bold">搶槓 / 尾牌連摸</td><td>他家加槓的牌正是自己所叫的扉，可搶去食糊當被搶者出銃（10番/表5番，搶暗槓30番）；連續補 n 張尾牌後自摸為尾牌連摸。</td><td class="center">自摸、花/槓上自摸</td><td class="num">10 (表5)</td></tr>
+    </tbody>
+  </table>
+
+  <div class="note" style="text-align:center; margin-top:6px;">以上所有規則各處鄉村各處例，但理論上大同小異，開始前請務必與其他牌友達成共識，以免爭執。</div>
+
+  <!-- ==================== 正宗香港/台灣麻雀 SVG 矢量繪圖引擎 ==================== -->
+  <script>
+    (function() {
+      const NAVY = "#172554";
+      const RED  = "#dc2626";
+      const GRN  = "#15803d";
+      const BLUE = "#1e3a8a";
+      const FONT = "'Kaiti TC', 'STKaiti', 'DFKai-SB', 'BiauKai', 'Songti TC', serif";
+
+      function dot(cx, cy, r, col) {
+        const r2 = (r * 0.58).toFixed(2);
+        const r3 = (r * 0.28).toFixed(2);
+        return `<circle cx="${cx}" cy="${cy}" r="${r}" fill="${col}"/>` +
+               `<circle cx="${cx}" cy="${cy}" r="${r2}" fill="none" stroke="#fffdf7" stroke-width="1.1"/>` +
+               `<circle cx="${cx}" cy="${cy}" r="${r3}" fill="#fffdf7"/>`;
+      }
+
+      function stick(x, y, h, col) {
+        const cy = y + h / 2;
+        return `<rect x="${x - 2.1}" y="${y}" width="4.2" height="${h}" rx="2.1" fill="${col}"/>` +
+               `<line x1="${x}" y1="${y + 1.5}" x2="${x}" y2="${y + h - 1.5}" stroke="#fffdf7" stroke-width="0.9"/>` +
+               `<line x1="${x - 2.1}" y1="${cy}" x2="${x + 2.1}" y2="${cy}" stroke="#fffdf7" stroke-width="1.1"/>`;
+      }
+
+      function renderTileSVG(code) {
+        let inner = "";
+        const wanNums = {1:"一",2:"二",3:"三",4:"四",5:"伍",6:"六",7:"七",8:"八",9:"九"};
+
+        if (/^[1-9]w$/.test(code)) {
+          const n = wanNums[code[0]];
+          inner = `<text x="18" y="20" text-anchor="middle" fill="${NAVY}" font-family="${FONT}" font-size="16.5" font-weight="900">${n}</text>` +
+                  `<text x="18" y="41" text-anchor="middle" fill="${RED}" font-family="${FONT}" font-size="17.5" font-weight="900">萬</text>`;
+        }
+        else if (/^[1-9]p$/.test(code)) {
+          const p = parseInt(code[0], 10);
+          if (p === 1) {
+            inner = `<circle cx="18" cy="24" r="12.5" fill="${GRN}"/>` +
+                    `<circle cx="18" cy="24" r="9.5" fill="none" stroke="#fffdf7" stroke-width="1.3" stroke-dasharray="2.2,1.5"/>` +
+                    `<circle cx="18" cy="24" r="6" fill="${RED}"/>` +
+                    `<circle cx="18" cy="24" r="3" fill="none" stroke="#fffdf7" stroke-width="1"/>` +
+                    `<circle cx="18" cy="24" r="1.2" fill="#fffdf7"/>`;
+          } else if (p === 2) {
+            inner = dot(18, 13, 6.8, BLUE) + dot(18, 35, 6.8, GRN);
+          } else if (p === 3) {
+            inner = dot(10, 11, 5.6, GRN) + dot(18, 24, 5.6, RED) + dot(26, 37, 5.6, BLUE);
+          } else if (p === 4) {
+            inner = dot(11, 13, 5.8, BLUE) + dot(25, 13, 5.8, GRN) + dot(11, 35, 5.8, GRN) + dot(25, 35, 5.8, BLUE);
+          } else if (p === 5) {
+            inner = dot(10.5, 11.5, 5.1, BLUE) + dot(25.5, 11.5, 5.1, GRN) +
+                    dot(18, 24, 5.1, RED) +
+                    dot(10.5, 36.5, 5.1, GRN) + dot(25.5, 36.5, 5.1, BLUE);
+          } else if (p === 6) {
+            inner = dot(11, 11.5, 5.1, GRN) + dot(25, 11.5, 5.1, GRN) +
+                    dot(11, 25.5, 5.1, RED) + dot(25, 25.5, 5.1, RED) +
+                    dot(11, 38, 5.1, RED)   + dot(25, 38, 5.1, RED);
+          } else if (p === 7) {
+            inner = dot(9.5, 9.5, 4.4, GRN) + dot(18, 13, 4.4, GRN) + dot(26.5, 16.5, 4.4, GRN) +
+                    dot(11, 27.5, 4.8, RED) + dot(25, 27.5, 4.8, RED) +
+                    dot(11, 38.5, 4.8, RED) + dot(25, 38.5, 4.8, RED);
+          } else if (p === 8) {
+            [9, 19, 29, 39].forEach(y => {
+              inner += dot(11, y, 4.3, BLUE) + dot(25, y, 4.3, BLUE);
+            });
+          } else if (p === 9) {
+            [9.5, 18, 26.5].forEach(x => {
+              inner += dot(x, 10, 4.3, GRN) + dot(x, 24, 4.3, RED) + dot(x, 38, 4.3, BLUE);
+            });
+          }
+        }
+        else if (/^[1-9]s$/.test(code)) {
+          const s = parseInt(code[0], 10);
+          if (s === 1) {
+            inner = `<path d="M18 7 C15 7 13 9 13 12 C13 14 15 16 15 18 C11 20 9 25 11 30 C13 34 16 35 16 41 L19 41 L19 34 C22 33 26 29 26 23 C26 18 22 16 20 14 C21 11 20 7 18 7 Z" fill="${GRN}"/>` +
+                    `<path d="M16 6 C18 4 21 5 22 8 C20 9 18 8 16 6 Z" fill="${RED}"/>` +
+                    `<circle cx="16.5" cy="11.5" r="1.5" fill="#fffdf7"/><circle cx="16.5" cy="11.5" r="0.8" fill="${NAVY}"/>` +
+                    `<path d="M11 11 L13.5 10.5 L13.5 12.5 Z" fill="${RED}"/>` +
+                    `<ellipse cx="18" cy="24" rx="3.5" ry="5" fill="${RED}"/>` +
+                    `<path d="M16 22 Q18 25 20 22" stroke="#fffdf7" stroke-width="1" fill="none"/>`;
+          } else if (s === 2) {
+            inner = stick(18, 6, 16, GRN) + stick(18, 26, 16, GRN);
+          } else if (s === 3) {
+            inner = stick(18, 6, 16, GRN) + stick(11, 26, 16, GRN) + stick(25, 26, 16, GRN);
+          } else if (s === 4) {
+            inner = stick(11, 6, 16, GRN) + stick(25, 6, 16, GRN) + stick(11, 26, 16, GRN) + stick(25, 26, 16, GRN);
+          } else if (s === 5) {
+            inner = stick(10, 6, 16, GRN) + stick(26, 6, 16, GRN) +
+                    stick(18, 16, 16, RED) +
+                    stick(10, 26, 16, GRN) + stick(26, 26, 16, GRN);
+          } else if (s === 6) {
+            [10, 18, 26].forEach(x => {
+              inner += stick(x, 6, 16, GRN) + stick(x, 26, 16, GRN);
+            });
+          } else if (s === 7) {
+            inner = stick(18, 4, 11.5, RED);
+            [10, 18, 26].forEach(x => {
+              inner += stick(x, 18, 12, GRN) + stick(x, 32, 12, GRN);
+            });
+          } else if (s === 8) {
+            inner = `<path d="M9 7 L9 20 L18 13 L27 20 L27 7" fill="none" stroke="${GRN}" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>` +
+                    `<path d="M9 7 L9 20 L18 13 L27 20 L27 7" fill="none" stroke="#fffdf7" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>` +
+                    `<path d="M9 41 L9 28 L18 35 L27 28 L27 41" fill="none" stroke="${GRN}" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>` +
+                    `<path d="M9 41 L9 28 L18 35 L27 28 L27 41" fill="none" stroke="#fffdf7" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>`;
+          } else if (s === 9) {
+            [5, 18.5, 32].forEach(y => {
+              inner += stick(10, y, 11.5, GRN) + stick(18, y, 11.5, RED) + stick(26, y, 11.5, GRN);
+            });
+          }
+        }
+        else if (/^f[1-4]$/.test(code)) {
+          const idx = parseInt(code[1], 10);
+          const names = {1:"梅", 2:"蘭", 3:"菊", 4:"竹"};
+          inner = `<text x="10" y="15" text-anchor="middle" fill="${NAVY}" font-family="${FONT}" font-size="11" font-weight="900">${names[idx]}</text>` +
+                  `<text x="27" y="15" text-anchor="middle" fill="${RED}" font-family="sans-serif" font-size="10" font-weight="800">${idx}</text>` +
+                  `<path d="M10 40 Q18 32 26 38 M18 35 L18 25" stroke="${GRN}" stroke-width="2" fill="none" stroke-linecap="round"/>` +
+                  `<circle cx="18" cy="27" r="5.5" fill="${RED}"/>` +
+                  `<circle cx="18" cy="27" r="2" fill="#fffdf7"/>`;
+        }
+        else {
+          const honors = {
+            E: {t:"東", c:NAVY}, S: {t:"南", c:NAVY}, W: {t:"西", c:NAVY}, N: {t:"北", c:NAVY},
+            C: {t:"中", c:RED},  F: {t:"發", c:GRN}
+          };
+          if (code === "P") {
+            inner = `<rect x="7" y="8" width="22" height="32" rx="2" fill="none" stroke="${BLUE}" stroke-width="2.2"/>` +
+                    `<rect x="9.5" y="10.5" width="17" height="27" rx="1" fill="none" stroke="${BLUE}" stroke-width="0.9"/>`;
+          } else if (honors[code]) {
+            inner = `<text x="18" y="33" text-anchor="middle" fill="${honors[code].c}" font-family="${FONT}" font-size="23" font-weight="900">${honors[code].t}</text>`;
+          }
+        }
+
+        return `<svg class="mj-svg" viewBox="0 0 36 48" xmlns="http://www.w3.org/2000/svg">` +
+               `<rect x="1" y="1" width="34" height="46" rx="4" fill="#fffdf7" stroke="#94a3b8" stroke-width="1.2"/>` +
+               `<path d="M2 45 L34 45" stroke="#cbd5e1" stroke-width="1.5"/>` +
+               inner +
+               `</svg>`;
+      }
+
+      document.querySelectorAll(".mj-hand").forEach(el => {
+        const tokens = (el.getAttribute("data-tiles") || "").trim().split(/\s+/);
+        let html = "";
+        tokens.forEach(t => {
+          if (t === "|") {
+            html += `<span class="mj-space"></span>`;
+          } else if (t) {
+            html += renderTileSVG(t);
+          }
+        });
+        el.innerHTML = html;
+      });
+    })();
+  </script>
+</body>
+</html>
